@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+  elastic:
+    container_name: "elastic"
+    image: "docker.elastic.co/elasticsearch/elasticsearch:6.2.2"
+    ports:
+      - "9200:9200"
+    environment:
+      - "discovery.type: single-node"
+
+  kibana:
+    container_name: "kibana"
+    image: "docker.elastic.co/kibana/kibana:6.2.2"
+    depends_on:
+      - elastic
+    ports:
+      - "5601:5601"
+    environment: 
+      ELASTICSEARCH_URL: http://elastic:9200
