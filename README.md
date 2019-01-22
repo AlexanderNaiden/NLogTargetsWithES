@@ -9,6 +9,6 @@ Test NLog.Targets interaction with ElasticSearch
 
 - open folder with solution and go to docker folder
 - open cmd and make docker folder current
-- type command: docker-compose up (when you don't need elastic anymore then press ctrl + pause(break) and type command docker-compose down)
+- type command: `docker-compose up` (when you don't need elastic anymore then press `ctrl + break` and type command `docker-compose down`)
 - open solution in visual studio 2017 (2015)
 - go to `http://localhost:5601(kibana)` into discover section and check that log is shown in kibana
