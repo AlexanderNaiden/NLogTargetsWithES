@@ -2,8 +2,8 @@ Test NLog.Targets interaction with ElasticSearch
 
  General Requirements.
 
- This is .net 4.6.2 console application (so you will need install 4.6.2 version of .net framewrok at your PC)
- For running ElasticSearch & Kibana you will need have installed docker
+-This is .net 4.6.2 console application (you'll need install 4.6.2 version of .net framewrok on your PC) 
+-For running ElasticSearch & Kibana you will need have installed docker
 
  Deploy on Windows
 
