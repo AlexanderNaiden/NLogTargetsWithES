@@ -10,5 +10,7 @@ Test NLog.Targets interaction with ElasticSearch
 - open folder with solution and go to docker folder
 - open cmd and make docker folder current
 - type command: `docker-compose up` (when you don't need elastic anymore then press `ctrl + break` and type command `docker-compose down`)
-- open solution in visual studio 2017 (2015)
-- go to `http://localhost:5601(kibana)` into discover section and check that log is shown in kibana
+- open solution in visual studio 2017 (2015) and run it
+- open kibana by address `http://localhost:5601`
+- if you will see message `"You only have a single index. You can create an index pattern to match it."` then create appropriate index pattern `testapp-log-*` in kibana
+- go to discover section in kibana and check that logs are shown in kibana
